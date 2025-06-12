@@ -1,0 +1,69 @@
+
+> nx run graph:serve 
+Starting type checking service...
+Using 2 workers with 2048MB memory limit
+(node:616461) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Type checking in progress...
+Hash: [1ma1db3e01c55f670ff95e[39m[22m
+Built at: 06/02/2025 [1m3:31:07 AM[39m[22m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m = [1m[32mmain.js[39m[22m [1m[32mmain.js.map[39m[22m
+chunk {[1m[33mmain[39m[22m} [1m[32mmain.js, main.js.map[39m[22m (main) 323 KiB[1m[33m [entry][39m[22m[1m[32m [rendered][39m[22m
+Debugger listening on ws://localhost:33361/7730efc9-b522-45f2-9c73-32571067b1dd
+For help, see: https://nodejs.org/en/docs/inspector
+----------------------
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:19 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +581ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSentryModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPubSubModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCacheModule dependencies initialized[39m[38;5;3m +4ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSentryCoreModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDiscoveryModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScheduleModule dependencies initialized[39m[38;5;3m +4ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResolverModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGraphQLSchemaBuilderModule dependencies initialized[39m[38;5;3m +4ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGraphQLModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mReadyController {/}:[39m[38;5;3m +49ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:20 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/ready, GET} route[39m[38;5;3m +13ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:21 AM [32m    LOG[39m [38;5;3m[GraphQLModule] [39m[32mMapped {/graphql, POST} route[39m[38;5;3m +1190ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:21 AM [32m    LOG[39m [38;5;3m[SchemaJsonTask] [39m[32mCreated schema.json[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:21 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +10ms[39m
+[32m[Nest] 616690  - [39m06/02/2025, 3:31:21 AM [32m    LOG[39m [32mListening at http://localhost:3334[39m
+No type errors found
+Version: typescript 4.3.5
+Time: 32277ms
+Request started ::1 undefined
+EXCEPTION NotFoundException: Cannot GET /
+    at callback (/home/mini/projects/librematch-collector/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+    at /home/mini/projects/librematch-collector/node_modules/@nestjs/core/router/router-proxy.js:9:23
+    at Layer.handle [as handle_request] (/home/mini/projects/librematch-collector/node_modules/@nestjs/platform-express/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/mini/projects/librematch-collector/node_modules/@nestjs/platform-express/node_modules/express/lib/router/index.js:328:13)
+    at /home/mini/projects/librematch-collector/node_modules/@nestjs/platform-express/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/mini/projects/librematch-collector/node_modules/@nestjs/platform-express/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/mini/projects/librematch-collector/node_modules/@nestjs/platform-express/node_modules/express/lib/router/index.js:280:10)
+    at /home/mini/projects/librematch-collector/node_modules/express/lib/router/index.js:641:15
+    at next (/home/mini/projects/librematch-collector/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/mini/projects/librematch-collector/node_modules/express/lib/router/index.js:174:3) {
+  response: { statusCode: 404, message: 'Cannot GET /', error: 'Not Found' },
+  status: 404
+}
+EXCEPTION NotFoundException: Cannot GET /favicon.ico
+    at callback (/home/mini/projects/librematch-collector/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+    at /home/mini/projects/librematch-collector/node_modules/@nestjs/core/router/router-proxy.js:9:23
+    at Layer.handle [as handle_request] (/home/mini/projects/librematch-collector/node_modules/@nestjs/platform-express/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/mini/projects/librematch-collector/node_modules/@nestjs/platform-express/node_modules/express/lib/router/index.js:328:13)
+    at /home/mini/projects/librematch-collector/node_modules/@nestjs/platform-express/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/mini/projects/librematch-collector/node_modules/@nestjs/platform-express/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/mini/projects/librematch-collector/node_modules/@nestjs/platform-express/node_modules/express/lib/router/index.js:280:10)
+    at /home/mini/projects/librematch-collector/node_modules/express/lib/router/index.js:641:15
+    at next (/home/mini/projects/librematch-collector/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/mini/projects/librematch-collector/node_modules/express/lib/router/index.js:174:3) {
+  response: {
+    statusCode: 404,
+    message: 'Cannot GET /favicon.ico',
+    error: 'Not Found'
+  },
+  status: 404
+}
+Request started ::ffff:127.0.0.1 undefined

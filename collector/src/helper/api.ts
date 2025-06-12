@@ -22,7 +22,7 @@ interface IApiConfig {
 }
 
 const apiConfig: IApiConfig = {
-    appBinaryChecksum: 83607,
+    appBinaryChecksum: 145651, // Default value, this aoe2 current version
 };
 
 export function patchApiConfig(config: IApiConfig) {

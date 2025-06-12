@@ -190,7 +190,7 @@ export class ProxyController implements OnApplicationBootstrap {
                     "title": "age2",
                 });
 
-                const login_request = await fetch(`https://aoe-api.reliclink.com/game/login/platformlogin?${query}`);
+                const login_request = await fetch(`https://aoe-api.worldsedgelink.com/game/login/platformlogin?${query}`);
                 const content = await login_request.text();
 
                 if (content.includes(`/steam/${steamId}`)) {
@@ -256,7 +256,7 @@ export class ProxyController implements OnApplicationBootstrap {
             // console.log('Request Headers:', headers);
             // console.log('Request Data:', data); // NEW
             const query = makeQueryString(data);
-            const response = await fetch(`https://aoe-api.reliclink.com${endpoint}?${query}`, {
+            const response = await fetch(`https://aoe-api.worldsedgelink.com${endpoint}?${query}`, {
                 headers: headers,
             });
             const responseHeaders = {};
@@ -279,7 +279,7 @@ export class ProxyController implements OnApplicationBootstrap {
             // console.log('Request Headers:', headers);
             // console.log('Request Data:', data); // NEW
             const query = makeQueryString(data);
-            const response = await fetch(`https://aoe-api.reliclink.com${endpoint}?${query}`, {
+            const response = await fetch(`https://aoe-api.worldsedgelink.com${endpoint}?${query}`, {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: headers,

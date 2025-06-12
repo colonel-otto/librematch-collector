@@ -16,7 +16,7 @@ export async function getLeaderBoard2(leaderboard_id: number = 0, start: number 
         sortBy: 1,
     });
 
-    const url = `${baseUrl}/https://aoe-api.reliclink.com/community/leaderboard/getLeaderBoard2?${queryString}`;
+    const url = `${baseUrl}/https://aoe-api.worldsedgelink.com/community/leaderboard/getLeaderBoard2?${queryString}`;
     console.log(url);
     return await fetchJsonWithRetry(url);
 }
@@ -27,7 +27,7 @@ export async function getCommunityRecentMatchHistory(profileIds: number[]): Prom
         title: 'age2',
     });
 
-    const url = `${baseUrl}/https://aoe-api.reliclink.com/community/leaderboard/getRecentMatchHistory?${queryString}`;
+    const url = `${baseUrl}/https://aoe-api.worldsedgelink.com/community/leaderboard/getRecentMatchHistory?${queryString}`;
     console.log(url);
     return await fetchJsonWithRetry(url);
 }

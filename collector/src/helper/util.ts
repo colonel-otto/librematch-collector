@@ -23,7 +23,7 @@ const apiKey = process.env.PROXY_API_KEY;
 export async function fetchJson(url: string) {
     const response = await fetch(url, {
         headers: {
-            apikey: apiKey,
+            api_key: apiKey,
         },
         timeout: 60 * 1000,
     });
@@ -38,7 +38,7 @@ export async function fetchJson(url: string) {
 export async function fetchJsonWithRetry(url: string) {
     const response = await fetch(url, {
         headers: {
-            apikey: apiKey,
+            api_key: apiKey,
         },
         timeout: 60 * 1000,
     });

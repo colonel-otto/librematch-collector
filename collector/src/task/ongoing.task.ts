@@ -77,9 +77,12 @@ export class OngoingTask implements OnApplicationBootstrap {
 
     async updateSettings() {
         const settings = (await this.prisma.setting.findMany({ where: { component: 'global' } }));
-        patchApiConfig({
-            appBinaryChecksum: parseIntNullable(settings.find(s => s.key === 'appBinaryChecksum')?.value),
-        });
+        const appBinaryChecksum = parseIntNullable(settings.find(s => s.key === 'appBinaryChecksum')?.value);
+        if (appBinaryChecksum !== null) {
+            patchApiConfig({
+                appBinaryChecksum: appBinaryChecksum,
+            });
+        }
     }
 
     async sendMetrics() {
